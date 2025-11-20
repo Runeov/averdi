@@ -11,9 +11,10 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
         <ImageWithFallback
-          src="/karasjok_Over.jpg"
+          src="/karasjok_Over.avif"
           alt="Profesjonelt kontormiljø hos Averdi"
           className="w-full h-full object-cover"
+          fetchPriority="high"
         />
       </div>
 
@@ -29,7 +30,7 @@ export function Hero() {
           </p>
           
           <p className="text-lg sm:text-xl mb-12 leading-relaxed drop-shadow-md opacity-90 max-w-3xl mx-auto hidden md:block">
-            Siden 1999 har vi vært en trygg havn for norske bedrifter. Men trygghet betyr ikke stillstand. Hos Averdi møter du en unik kombinasjon: autoriserte regnskapsførere med lang erfaring som kan lovverket til fingerspissene sammen med våre yngre ansatte sørger for at du utnytter dagens muligheter fullt ut.
+            Siden 1999 har vi vært en trygg havn for norske bedrifter. Men trygghet betyr ikke stillstand. Hos Averdi møter du en unik kombinasjon: autoriserte regnskapsførere med lang erfaring som kan lovverket til fingerspissene sammen med våre yngre digitale hoder sørger vi for at du utnytter dagens muligheter fullt ut.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

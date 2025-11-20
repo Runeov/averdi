@@ -5,8 +5,6 @@ import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { Phone, Mail, MapPin, Copy } from 'lucide-react';
 import { useState } from 'react';
-import { toast } from 'sonner';
-
 export function ContactPanel() {
   const [formData, setFormData] = useState({
     name: '',
@@ -19,13 +17,13 @@ export function ContactPanel() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // This would typically send to a backend
-    toast.success('Takk for din henvendelse! Vi kontakter deg snart.');
+    alert('Takk for din henvendelse! Vi kontakter deg snart.');
     setFormData({ name: '', email: '', phone: '', company: '', message: '' });
   };
 
   const copyToClipboard = (text: string, type: string) => {
     navigator.clipboard.writeText(text);
-    toast.success(`${type} kopiert til utklippstavlen`);
+    alert(`${type} kopiert til utklippstavlen`);
   };
 
   return (
@@ -66,6 +64,7 @@ export function ContactPanel() {
                           size="sm"
                           onClick={() => copyToClipboard('+47 78 46 60 00', 'Telefonnummer')}
                           className="h-6 w-6 p-0"
+                          aria-label="Kopier telefonnummer"
                         >
                           <Copy className="h-3 w-3" />
                         </Button>
@@ -91,6 +90,7 @@ export function ContactPanel() {
                           size="sm"
                           onClick={() => copyToClipboard('post@averdi.no', 'E-postadresse')}
                           className="h-6 w-6 p-0"
+                          aria-label="Kopier e-postadresse"
                         >
                           <Copy className="h-3 w-3" />
                         </Button>
@@ -112,6 +112,7 @@ export function ContactPanel() {
                             size="sm"
                             onClick={() => copyToClipboard('Hovedgata 15, 9730 Karasjok', 'Adresse')}
                             className="h-4 w-4 p-0"
+                            aria-label="Kopier adresse"
                           >
                             <Copy className="h-2 w-2" />
                           </Button>

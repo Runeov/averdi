@@ -9,7 +9,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="mb-4">
-              <img src="/logo_averdi.png" alt="Averdi Logo" className="h-24 w-auto" />
+              <img src="/logo_averdi.avif" alt="Averdi Logo" className="h-24 w-auto" />
             </div>
             <p className="text-muted-foreground mb-4 leading-relaxed">
               Autorisert regnskapsførerselskap som hjelper norske bedrifter med 

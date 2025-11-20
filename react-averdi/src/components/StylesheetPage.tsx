@@ -256,7 +256,7 @@ interface StylesheetPageProps {
   onSchemeChange?: (schemeId: string) => void;
 }
 
-export function StylesheetPage({ onBack, currentScheme = 'averdi-orange', onSchemeChange }: StylesheetPageProps) {
+export function StylesheetPage({ onBack, currentScheme = 'averdi-professional', onSchemeChange }: StylesheetPageProps) {
   const [selectedScheme, setSelectedScheme] = useState(currentScheme);
 
   const handleSchemeSelect = (schemeId: string) => {
@@ -270,6 +270,7 @@ export function StylesheetPage({ onBack, currentScheme = 'averdi-orange', onSche
     const themeClasses = [
       'theme-averdi-original',
       'theme-averdi-professional',
+      'theme-averdi-orange',
       'theme-professional-blue',
       'theme-trust-navy',
       'theme-growth-green',
@@ -288,8 +289,8 @@ export function StylesheetPage({ onBack, currentScheme = 'averdi-orange', onSche
       body.classList.remove(className);
     });
     
-    // Add the new theme class (skip for averdi-orange as it's the default)
-    if (schemeId !== 'averdi-orange') {
+    // Add the new theme class (skip for averdi-professional as it's the default)
+    if (schemeId !== 'averdi-professional') {
       const themeClass = `theme-${schemeId}`;
       body.classList.add(themeClass);
     }

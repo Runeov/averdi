@@ -67,7 +67,7 @@ export function About({ onViewProfile }: AboutProps) {
           <div className="relative rounded-xl overflow-hidden shadow-lg lg:h-full min-h-[500px] lg:min-h-[500px]">
             <div className="absolute inset-0 bg-black/70 lg:hidden z-10"></div>
             <ImageWithFallback
-              src="/ingvald_avis.png"
+              src="/ingvald_avis.avif"
               alt="Ingvald Laiti - Daglig leder i Averdi"
               className="absolute inset-0 w-full h-full object-cover lg:relative"
             />
