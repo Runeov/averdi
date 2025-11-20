@@ -1,7 +1,6 @@
 "use client";
 
 // import { useState } from 'react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Card, CardContent } from './ui/card';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 

@@ -60,7 +60,7 @@ export function About({ onViewProfile }: AboutProps) {
 
 
   return (
-    <section id="about" className="py-16 md:py-24">
+    <section id="about" className="py-10">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Image container - acts as background on mobile, side image on desktop */}

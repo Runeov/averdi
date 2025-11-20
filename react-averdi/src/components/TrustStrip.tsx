@@ -7,7 +7,7 @@ export function TrustStrip() {
   ];
 
   return (
-    <section className="py-12 bg-secondary/30 border-y">
+    <section className="py-10 bg-secondary/30 border-y">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           {trustItems.map((item, index) => (

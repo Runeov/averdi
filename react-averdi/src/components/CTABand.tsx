@@ -1,13 +1,6 @@
 import { Button } from './ui/button';
 
 export function CTABand() {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="py-16 md:py-20 bg-primary text-primary-foreground">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 text-center">

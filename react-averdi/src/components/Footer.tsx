@@ -2,7 +2,7 @@ import { Separator } from './ui/separator';
 
 export function Footer() {
   return (
-    <footer className="bg-muted/30 pt-16 pb-8">
+    <footer className="bg-muted/30 pt-10 pb-8">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
