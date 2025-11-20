@@ -4,7 +4,7 @@ import { Hero } from './components/Hero';
 import { TrustStrip } from './components/TrustStrip';
 import { Services } from './components/Services';
 import { About } from './components/About';
-import { CTABand } from './components/CTABand';
+import { NewsSection } from './components/NewsSection';
 import { ContactPanel } from './components/ContactPanel';
 import { Footer } from './components/Footer';
 import { StylesheetPage } from './components/StylesheetPage';
@@ -28,7 +28,7 @@ export default function App() {
       <TrustStrip />
       <Services />
       <About />
-      <CTABand />
+      <NewsSection />
       <ContactPanel />
       <Footer />
     </main>
