@@ -75,13 +75,19 @@ export function Navbar({ currentPage = 'home', onNavigate }: NavbarProps) {
               >
                 Om oss
               </button>
-              <button 
+              <button
+                onClick={() => scrollToSection('news')}
+                className="text-foreground hover:text-primary transition-colors px-3 py-2 rounded-md"
+              >
+                Nyheter
+              </button>
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="text-foreground hover:text-primary transition-colors px-3 py-2 rounded-md"
               >
                 Kontakt
               </button>
-              <button 
+              <button
                 onClick={() => handleNavigation('stylesheet')}
                 className={`transition-colors px-3 py-2 rounded-md ${
                   currentPage === 'stylesheet' 
@@ -145,13 +151,19 @@ export function Navbar({ currentPage = 'home', onNavigate }: NavbarProps) {
               >
                 Om oss
               </button>
-              <button 
+              <button
+                onClick={() => scrollToSection('news')}
+                className="text-foreground hover:text-primary block px-3 py-2 rounded-md w-full text-left transition-colors"
+              >
+                Nyheter
+              </button>
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="text-foreground hover:text-primary block px-3 py-2 rounded-md w-full text-left transition-colors"
               >
                 Kontakt
               </button>
-              <button 
+              <button
                 onClick={() => handleNavigation('stylesheet')}
                 className={`block px-3 py-2 rounded-md w-full text-left transition-colors ${
                   currentPage === 'stylesheet' 

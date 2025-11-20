@@ -19,11 +19,11 @@ export function Hero() {
   };
 
   return (
-    <section id="hero" className="py-8 md:py-12 bg-gradient-to-br from-background to-secondary/20">
+    <section id="hero" className="py-6 md:py-12 bg-gradient-to-br from-background to-secondary/20">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
         
         {/* Image with H1 overlay */}
-        <div className="relative rounded-xl overflow-hidden shadow-lg mb-12">
+        <div className="relative rounded-xl overflow-hidden shadow-lg mb-6">
           <div className="absolute inset-0 bg-black/40 z-10"></div>
           <ImageWithFallback
             src="/karasjok_Over.jpg"
