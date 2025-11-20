@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
-import averdiLogo from 'figma:asset/90c8e50096e0d5936d6367e05a95193b46dc6ced.png';
 
 interface NavbarProps {
   currentPage?: string;
@@ -48,7 +47,7 @@ export function Navbar({ currentPage = 'home', onNavigate }: NavbarProps) {
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <img
-                src={averdiLogo.src}
+                src="/logo_averdi.png"
                 alt="Averdi"
                 className="h-8"
               />
