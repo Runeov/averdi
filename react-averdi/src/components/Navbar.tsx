@@ -13,20 +13,26 @@ export function Navbar({ currentPage = 'home', onNavigate }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
+    const scroll = () => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const navbarHeight = 64; // Height of the navbar (h-16 = 4rem = 64px)
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - navbarHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    };
+
     if (currentPage !== 'home') {
       onNavigate?.('home');
       // Wait for navigation to complete before scrolling
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
+      setTimeout(scroll, 100);
     } else {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      scroll();
     }
     setIsMenuOpen(false);
   };

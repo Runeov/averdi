@@ -1,4 +1,5 @@
 import { Separator } from './ui/separator';
+import { scrollToSection } from './ui/utils';
 
 export function Footer() {
   return (
@@ -25,32 +26,32 @@ export function Footer() {
             <h4 className="font-medium mb-4">Hurtiglenker</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <button 
-                  onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}
+                <button
+                  onClick={() => scrollToSection('hero')}
                   className="hover:text-primary transition-colors"
                 >
                   Hjem
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                <button
+                  onClick={() => scrollToSection('services')}
                   className="hover:text-primary transition-colors"
                 >
                   Tjenester
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                <button
+                  onClick={() => scrollToSection('about')}
                   className="hover:text-primary transition-colors"
                 >
                   Om oss
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                <button
+                  onClick={() => scrollToSection('contact')}
                   className="hover:text-primary transition-colors"
                 >
                   Kontakt

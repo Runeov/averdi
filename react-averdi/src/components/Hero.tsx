@@ -2,22 +2,9 @@
 
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { scrollToSection } from './ui/utils';
 
 export function Hero() {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const scrollToServices = () => {
-    const element = document.getElementById('services');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="hero" className="min-h-screen flex flex-col justify-center relative bg-gradient-to-br from-background to-secondary/20">
       {/* Background Image with Overlay */}
@@ -48,7 +35,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              onClick={scrollToContact}
+              onClick={() => scrollToSection('contact')}
               className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-white border-none"
             >
               Kontakt oss
@@ -56,7 +43,7 @@ export function Hero() {
             <Button
               variant="outline"
               size="lg"
-              onClick={scrollToServices}
+              onClick={() => scrollToSection('services')}
               className="text-lg px-8 py-6 bg-white/10 hover:bg-white/20 text-white border-white/50 backdrop-blur-sm"
             >
               Se tjenester

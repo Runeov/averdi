@@ -117,8 +117,8 @@ export function About({ onViewProfile }: AboutProps) {
         </div>
 
         <div className="mb-12">
-          <h3 className="text-xl text-center mb-8">Vårt team</h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h3 className="text-xl text-center mb-8">Våre ansatte</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member, index) => (
               <TeamCard
                 key={index}
