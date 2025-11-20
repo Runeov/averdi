@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from './ui/button';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import { scrollToSection } from './ui/utils';
 
 export function Hero() {
@@ -10,7 +9,7 @@ export function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
-        <ImageWithFallback
+        <img
           src="/karasjok_Over.avif"
           alt="Profesjonelt kontormiljø hos Averdi"
           className="w-full h-full object-cover"

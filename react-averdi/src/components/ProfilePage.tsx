@@ -3,7 +3,6 @@ import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
 import { ArrowLeft, Mail, Phone, MapPin, Award, Users, Clock } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface ProfilePageProps {
   employee: {
@@ -57,7 +56,7 @@ export function ProfilePage({ employee, onBack }: ProfilePageProps) {
               <CardContent className="p-6">
                 <div className="text-center mb-6">
                   {employee.photo ? (
-                    <ImageWithFallback
+                  <img
                       src={employee.photo}
                       alt={employee.name}
                       className="w-32 h-32 rounded-full mx-auto object-cover mb-4"

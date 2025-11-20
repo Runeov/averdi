@@ -1,7 +1,6 @@
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Mail, Phone, User } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface TeamCardProps {
   name: string;
@@ -19,7 +18,7 @@ export function TeamCard({ name, role, email, phone, photo, description, onViewP
       <CardContent className="p-6 text-center">
         <div className="mb-4">
           {photo ? (
-            <ImageWithFallback
+            <img
               src={photo}
               alt={`${name} - ${role}`}
               className="w-24 h-24 rounded-full mx-auto object-cover"
