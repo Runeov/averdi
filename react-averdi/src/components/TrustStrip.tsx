@@ -1,9 +1,9 @@
 export function TrustStrip() {
   const trustItems = [
-    "15+ års erfaring",
-    "200+ fornøyde kunder",
+    "25+ års erfaring",
+    "Personlig service",
     "Autorisert regnskapsfører",
-    "Kontorer i Karasjok og Oslo"
+    "Lokal ekspertise",
   ];
 
   return (

@@ -7,13 +7,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl mb-4">Averdi AS</h3>
+            <div className="mb-4">
+              <img src="/logo_averdi.png" alt="Averdi Logo" className="h-24 w-auto" />
+            </div>
             <p className="text-muted-foreground mb-4 leading-relaxed">
               Autorisert regnskapsførerselskap som hjelper norske bedrifter med 
-              regnskap, lønn og økonomisk rådgivning siden 2010.
+              regnskap, lønn og økonomisk rådgivning siden 1999.
             </p>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>Org.nr: 123 456 789</p>
+              <p>Org.nr: 980 383 571</p>
               <p>Godkjent av Finanstilsynet</p>
             </div>
           </div>
@@ -67,12 +69,7 @@ export function Footer() {
                 <p>9730 Karasjok</p>
                 <p>+47 78 46 60 00</p>
               </div>
-              <div>
-                <p className="font-medium text-foreground mb-1">Oslo</p>
-                <p>Karl Johans gate 25</p>
-                <p>0159 Oslo</p>
-                <p>+47 22 33 44 55</p>
-              </div>
+             
             </div>
           </div>
         </div>

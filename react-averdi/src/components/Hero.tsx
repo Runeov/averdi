@@ -25,13 +25,13 @@ export function Hero() {
           {/* Left content */}
           <div className="lg:col-span-6 xl:col-span-5">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-6 text-foreground">
-              Regnskap som frigjør tid — rådgivning som gir retning.
+              Autorisert regnskap som ruster deg for fremtiden.
             </h1>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Vi hjelper med regnskap, lønn og økonomi — fra Karasjok og Oslo, til kunder i hele Norge.
+            Som autoriserte regnskapsførere er faget vår ryggrad, men menneskene er vår styrke
             </p>
             <p className="text-base text-muted-foreground mb-8 leading-relaxed">
-              Med erfaring siden 2010 og kontorer i både nord og sør, gir vi deg trygg økonomisk rådgivning og effektive løsninger tilpasset din bedrifts behov.
+             Siden 1999 har vi vært en trygg havn for norske bedrifter. Men trygghet betyr ikke stillstand. Hos Averdi møter du en unik kombinasjon: autoriserte regnskapsførere med lang erfaring som kan lovverket til fingerspissene sammen med våre yngre ansatte sørger for at du utnytter dagens muligheter fullt ut.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 

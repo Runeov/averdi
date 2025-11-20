@@ -46,7 +46,7 @@ export function Navbar({ currentPage = 'home', onNavigate }: NavbarProps) {
               onClick={() => handleNavigation('home')}
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
-              <span className="text-xl font-bold text-primary">Averdi</span>
+              <img src="/logo_averdi.png" alt="Averdi Logo" className="h-24 w-auto" />
             </button>
           </div>
 

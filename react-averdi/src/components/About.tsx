@@ -6,39 +6,57 @@ interface AboutProps {
 
 export function About({ onViewProfile }: AboutProps) {
   const team = [
-    {
-      id: "inga-marja-somby",
-      name: "Inga Márjá Somby",
-      role: "Autorisert regnskapsfører",
-      email: "inga@averdi.no",
-      phone: "+47 78 46 60 01",
-      description: "15 års erfaring med regnskap og økonomi. Spesialist på små og mellomstore bedrifter."
-    },
-    {
-      id: "lars-hansen",
-      name: "Lars Hansen",
-      role: "Økonomirådgiver",
-      email: "lars@averdi.no",
-      phone: "+47 22 33 44 56",
-      description: "Erfaren økonomirådgiver med fokus på vekstbedrifter og strategisk planlegging."
-    },
-    {
-      id: "marta-kristiansen",
-      name: "Marta Kristiansen",
-      role: "Lønnskonsulent",
-      email: "marta@averdi.no",
-      phone: "+47 78 46 60 02",
-      description: "Spesialist på lønn og personaladministrasjon med bred erfaring fra ulike bransjer."
-    },
-    {
-      id: "erik-nilsen",
-      name: "Erik Nilsen",
-      role: "Regnskapsfører",
-      email: "erik@averdi.no",
-      phone: "+47 22 33 44 57",
-      description: "Nyutdannet og engasjert regnskapsfører som brenner for å hjelpe nye bedrifter i gang."
-    }
-  ];
+   
+  {
+    id: "ingvald-laiti",
+    name: "Ingvald Laiti",
+    role: "Daglig leder / Autorisert regnskapsfører",
+    email: "ingvald.laiti@averdi.no",
+    phone: "907 67 993",
+    description: "Leder teamet med faglig tyngde og sikrer det solide fundamentet"
+  },
+  {
+    id: "jan-atle-guttorm",
+    name: "Jan Atle Guttorm",
+    role: "Regnskapsfører",
+    email: "jan.atle.guttorm@averdi.no",
+    phone: "915 48 089",
+    description: "Din garantist for orden. Leverer presis regnskapsføring som gir deg full kontroll i hverdagen."
+  },
+  {
+    id: "hilde-laiti",
+    name: "Hilde M. Laiti",
+    role: "Regnskapsfører",
+    email: "hilde.marie.laiti@averdi.no",
+    phone: "400 44 918",
+    description:  "Gjør økonomistyringen enklere for deg. Bruker effektive løsninger for å frigjøre tid til kjernevirksomheten."
+  },
+  {
+    id: "alida-norvang",
+    name: "Alida G. Norvang",
+    role: "Regnskapsfører",
+    email: "alida.norvang@averdi.no",
+    phone: "480 52 329",
+    description: "Nøyaktig og pålitelig. Sikrer at regnskapet ditt er en stabil plattform for alle dine viktige beslutninger."
+  },
+  {
+    id: "tonje-iren-anti",
+    name: "Tonje Iren Anti",
+    role: "Regnskapsfører",
+    email: "tonje.iren.anti@averdi.no",
+    phone: "480 23 265",
+    description: "Sikrer knirkefritt drift. En engasjert støttespiller som passer på at regnskapet ditt alltid er oppdatert."
+  },
+  {
+    id: "linda-kildedam",
+    name: "Linda Marja Anti Kildedam",
+    role: "Regnskapsfører",
+    email: "linda.kildedam@averdi.no",
+    phone: "480 51 672",
+    description: "Gir deg trygghet og oversikt. Hun sikrer at beslutningsgrunnlaget ditt alltid er i orden."
+  }
+]
+
 
   return (
     <section id="about" className="py-16 md:py-24">
@@ -49,8 +67,7 @@ export function About({ onViewProfile }: AboutProps) {
           </h2>
           <div className="max-w-3xl mx-auto space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Siden 2010 har Averdi vært en pålitelig partner for norske bedrifter som trenger 
-              profesjonell økonomihjelp. Med kontorer i både Karasjok og Oslo dekker vi hele landet.
+              Siden 1999 har Averdi vært en pålitelig og erfaren partner for norske bedrifter. Med kontor i Karasjok leverer vi profesjonelle regnskapstjenester og dyp lokalkunnskap – men vår erfaring strekker seg over hele landet.
             </p>
             <p>
               Vårt team består av autoriserte regnskapsførere og erfarne økonomirådgivere som 
