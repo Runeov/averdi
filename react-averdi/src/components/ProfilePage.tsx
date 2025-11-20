@@ -12,7 +12,7 @@ interface ProfilePageProps {
     role: string;
     email: string;
     phone: string;
-    office: 'karasjok' | 'oslo';
+    office: 'karasjok';
     photo?: string;
     description: string;
     experience: string;
@@ -33,11 +33,6 @@ export function ProfilePage({ employee, onBack }: ProfilePageProps) {
       address: 'Hovedgata 15, 9730 Karasjok',
       icon: '🏔️'
     },
-    oslo: {
-      name: 'Oslo',
-      address: 'Karl Johans gate 25, 0159 Oslo',
-      icon: '🏙️'
-    }
   };
 
   const currentOffice = officeInfo[employee.office];

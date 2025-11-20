@@ -19,21 +19,17 @@ export function CTABand() {
           Kontakt oss i dag for en uforpliktende samtale.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            variant="secondary" 
-            size="lg"
-            onClick={scrollToContact}
-            className="text-base px-8 py-3"
-          >
-            Kom i gang
-          </Button>
-          <Button 
-            variant="outline" 
+          
+          <Button
+            variant="outline"
             size="lg"
             asChild
-            className="text-base px-8 py-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+            className="text-base px-8 py-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary group"
           >
-            <a href="tel:+4778466000">Ring nå</a>
+            <a href="tel:+4778466000">
+              <span className="group-hover:hidden">Ring nå</span>
+              <span className="hidden group-hover:inline">+47 78 46 60 00</span>
+            </a>
           </Button>
         </div>
       </div>

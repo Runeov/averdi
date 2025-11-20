@@ -67,15 +67,15 @@ export function About({ onViewProfile }: AboutProps) {
           </h2>
           <div className="max-w-3xl mx-auto space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Siden 1999 har Averdi vært en pålitelig og erfaren partner for norske bedrifter. Med kontor i Karasjok leverer vi profesjonelle regnskapstjenester og dyp lokalkunnskap – men vår erfaring strekker seg over hele landet.
+              Siden 1999 har Averdi vært en pålitelig og erfaren partner for norske bedrifter. Med kontor i Karasjok leverer vi profesjonelle regnskapstjenester og dyp lokalkunnskap.
             </p>
             <p>
-              Vårt team består av autoriserte regnskapsførere og erfarne økonomirådgivere som 
-              brenner for å hjelpe bedrifter å lykkes. Vi kombinerer lokal kunnskap med moderne 
+              Vårt team består av autoriserte regnskapsførere og erfarne økonomirådgivere som
+              brenner for å hjelpe bedrifter å lykkes. Vi kombinerer lokal kunnskap med moderne
               teknologi for å gi deg de beste løsningene.
             </p>
             <p>
-              Enten du driver et enkeltpersonforetak i nord eller et større AS i sør, har vi 
+              Enten du driver et enkeltpersonforetak eller et større AS, har vi
               kompetansen og erfaringen som skal til for å ta hånd om din økonomi.
             </p>
           </div>

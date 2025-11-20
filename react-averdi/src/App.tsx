@@ -5,6 +5,7 @@ import { TrustStrip } from './components/TrustStrip';
 import { Services } from './components/Services';
 import { About } from './components/About';
 import { CTABand } from './components/CTABand';
+import { ContactPanel } from './components/ContactPanel';
 import { Footer } from './components/Footer';
 import { StylesheetPage } from './components/StylesheetPage';
 
@@ -28,6 +29,7 @@ export default function App() {
       <Services />
       <About />
       <CTABand />
+      <ContactPanel />
       <Footer />
     </main>
   );

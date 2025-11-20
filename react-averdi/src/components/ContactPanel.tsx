@@ -103,7 +103,7 @@ export function ContactPanel() {
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <p className="font-medium mb-2">Våre kontorer</p>
+                      <p className="font-medium mb-2">Vårt kontor</p>
                       <div className="space-y-2 text-sm text-muted-foreground">
                         <div className="flex items-center gap-2">
                           <span>Karasjok: Hovedgata 15, 9730 Karasjok</span>
@@ -116,35 +116,51 @@ export function ContactPanel() {
                             <Copy className="h-2 w-2" />
                           </Button>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <span>Oslo: Karl Johans gate 25, 0159 Oslo</span>
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            onClick={() => copyToClipboard('Karl Johans gate 25, 0159 Oslo', 'Adresse')}
-                            className="h-4 w-4 p-0"
-                          >
-                            <Copy className="h-2 w-2" />
-                          </Button>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
+            {/* Google Maps */}
+            <Card className="shadow-sm">
+              <CardContent className="p-6">
+                <h3 className="text-xl mb-4">Finn oss på kartet</h3>
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-medium mb-2 text-sm">Karasjok</p>
+                    <div className="rounded-lg overflow-hidden border">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726.8947234567!2d25.507!3d69.472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4e3e3e3e3e3e3%3A0x3e3e3e3e3e3e3e3e!2sHovedgata%2015%2C%209730%20Karasjok!5e0!3m2!1sen!2sno!4v1234567890"
+                        width="100%"
+                        height="200"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Averdi Karasjok Office Location"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+
 
             <div className="grid grid-cols-2 gap-4">
-              <Button size="lg" asChild className="h-16">
+              <Button size="lg" asChild className="h-16 group">
                 <a href="tel:+4778466000" className="flex flex-col items-center gap-1">
                   <Phone className="h-5 w-5" />
-                  <span>Ring nå</span>
+                  <span className="group-hover:hidden">Ring nå</span>
+                  <span className="hidden group-hover:inline">+47 78 46 60 00</span>
                 </a>
               </Button>
-              <Button variant="outline" size="lg" asChild className="h-16">
+              <Button variant="outline" size="lg" asChild className="h-16 group">
                 <a href="mailto:post@averdi.no" className="flex flex-col items-center gap-1">
                   <Mail className="h-5 w-5" />
-                  <span>Send e-post</span>
+                  <span className="group-hover:hidden">Send e-post</span>
+                  <span className="hidden group-hover:inline">post@averdi.no</span>
                 </a>
               </Button>
             </div>

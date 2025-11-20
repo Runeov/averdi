@@ -28,7 +28,7 @@ export function Hero() {
               Autorisert regnskap som ruster deg for fremtiden.
             </h1>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-            Som autoriserte regnskapsførere er faget vår ryggrad, men menneskene er vår styrke
+            Din partner for trygg økonomistyring – med faglig tyngde og hjertet i Finnmark
             </p>
             <p className="text-base text-muted-foreground mb-8 leading-relaxed">
              Siden 1999 har vi vært en trygg havn for norske bedrifter. Men trygghet betyr ikke stillstand. Hos Averdi møter du en unik kombinasjon: autoriserte regnskapsførere med lang erfaring som kan lovverket til fingerspissene sammen med våre yngre ansatte sørger for at du utnytter dagens muligheter fullt ut.

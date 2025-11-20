@@ -67,7 +67,22 @@ export function Footer() {
                 <p className="font-medium text-foreground mb-1">Karasjok</p>
                 <p>Hovedgata 15</p>
                 <p>9730 Karasjok</p>
-                <p>+47 78 46 60 00</p>
+                <a href="tel:+4778466000" className="hover:text-primary transition-colors group">
+                  <span className="group-hover:hidden">Ring oss</span>
+                  <span className="hidden group-hover:inline">+47 78 46 60 00</span>
+                </a>
+              </div>
+              <div className="rounded-lg overflow-hidden border mt-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1726.8947234567!2d25.507!3d69.472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45c4e3e3e3e3e3e3%3A0x3e3e3e3e3e3e3e3e!2sHovedgata%2015%2C%209730%20Karasjok!5e0!3m2!1sen!2sno!4v1234567890"
+                  width="100%"
+                  height="150"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Averdi Karasjok Office Location"
+                />
               </div>
              
             </div>
